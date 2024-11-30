@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/jss.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div class="header">
+        <header>
+            <h1 class="titulo"><a href="../index.html">Juan Luis Rodríguez <span style="color: rgb(165, 42, 42);">Consult Engineer</span></a></h1>
+            <hr>
+         </header>
+    </div>
+
+    <section class="heroo">
+        <div class="contenido-hero">
+            <h2 style="color: white;">Ejemplos de JavaScript</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="224" height="256" viewBox="0 0 448 512"><path fill="white" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48M243.8 381.4c0 43.6-25.6 63.5-62.9 63.5c-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6c13.8 0 22.6-5.4 22.6-26.5V237.7h42.1zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6c17.4 0 28.6-8.7 28.6-20.8c0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5c0-31.6 24.1-55.6 61.6-55.6c26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18c-12.3 0-20.1 7.8-20.1 18c0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2c0 37.8-29.8 58.6-69.7 58.6"/></svg>
+        </div>
+    </section>
+
+    <div class="contenedor sombra">
+        <h2>Diseño de recipientes a presión</h2>
+        <main class="contenedor">
+            <section class="inputs">
+                <h2 class="head-2">Datos de entrada</h2>
+                <div class="var-entradas">
+                    <fieldset>
+                        <legend>
+                            Variables de entrada
+                        </legend>
+                        <div class="datos">
+    
+                            <div class="dato">
+                                <label for="">Presión:</label>
+                                <input placeholder="MPa" class = "input-data" type="number" name="" id="presion">
+                            </div>
+                            <div class="dato">
+                                <label for="">Diámetro:</label>
+                                <input placeholder="metros" class = "input-data" type="number" name="" id="diametro">
+                            </div>
+    
+                            <div class="dato">
+                                <label for="">Material:</label>
+                                <select class="input-data" name="" id="Material">
+                                    <option value="1">SA-283 gr D</option>   
+                                    <option value="2">SA-662 gr B</option>   
+                                    <option value="3">SA-537</option>   
+                                    <option value="4">SA-515 gr 60</option>   
+                                    <option value="5">SA-516 gr 70</option>          
+                                </select> 
+                            </div>
+                            <div class="dato">
+                                <label for="">Longitud:</label>
+                                <input placeholder="metros"  class = "input-data" type="number" name="" id="Longitud">
+                            </div>
+                            <div class="dato">
+                                <label for="">Eficiencia de la junta:</label>
+                                <select class="input-data" name="" id="Eficiencia">
+                                    <option value="1">Radiografiado completo (100%)</option>   
+                                    <option value="2">Radiografiado parcial (85%)</option>   
+                                    <option value="3">Sin Radiografiado (75%)</option>   
+             
+                                </select> 
+                            </div>
+    
+                            <div class="dato">
+                                <label for="">ρ del líquido:</label>
+                                <input placeholder="kg/m³"  class = "input-data" type="number" name="" id="Densidad">
+                            </div>
+    
+                            <div class="dato">
+                                <label for="">Nivel:</label>
+                                <input placeholder="metros" class = "input-data" type="number" name="" id="Nivel">
+                            </div>
+    
+                        </div>
+                    </fieldset>
+                </div>
+            </section>
+    
+            <section class="output">
+                <h2 class="head-2">Datos de salida</h2>
+                <div class="var-entradas">
+                    <fieldset>
+                        <legend class="alinear-izquierda">
+                            Variables de salida
+                        </legend>
+                        <div class="datos">
+    
+                            <div class="dato">
+                                <label for="">Espesor calculado de las tapas:</label>
+                                <input disabled class = "input-data" type="number" name="" id="espesortapas">
+                            </div>
+                            <div class="dato">
+                                <label for="">Espesor real tapas:</label>
+                                <select class="input-data" name="" id="espesorrealtapa">
+                                    <option value="1">1/8 de pulgada</option>   
+                                    <option value="2">1/4 de pulgada</option>   
+                                    <option value="3">1/3 de pulgada</option>   
+                                    <option value="4">3/8 de pulgada</option>   
+                                    <option value="5">1/2 de pulgada</option>   
+                                    <option value="6">5/8 de pulgada</option>   
+                                    <option value="7">3/4 de pulgada</option>   
+                                    <option value="8">7/8 de pulgada</option>   
+                                    <option value="9">1 de pulgada</option>   
+                                    <option value="10">1 1/4 de pulgada</option>   
+                                    <option value="11">1 3/8 de pulgada</option>   
+                                    <option value="12">1 1/2 de pulgada</option>   
+                                    <option value="13">1 5/8 de pulgada</option>   
+                                    <option value="14">1 3/4 de pulgada</option>   
+                                    <option value="15">2 de pulgada</option>   
+                                </select>  
+                            </div>
+                            <div class="dato">
+                                <label for="">Espesor calculado del cuerpo:</label>
+                                <input disabled class = "input-data" type="number" name="" id="espesorcuerpo">
+                            </div>
+                            <div class="dato">
+                                <label for="">Espesor real del cuerpo:</label>
+                                <select class="input-data" name="" id="espesorrealcuerpo">
+                                    <option value="1">1/8 de pulgada</option>   
+                                    <option value="2">1/4 de pulgada</option>   
+                                    <option value="3">1/3 de pulgada</option>   
+                                    <option value="4">3/8 de pulgada</option>   
+                                    <option value="5">1/2 de pulgada</option>   
+                                    <option value="6">5/8 de pulgada</option>   
+                                    <option value="7">3/4 de pulgada</option>   
+                                    <option value="8">7/8 de pulgada</option>   
+                                    <option value="9">1 de pulgada</option>   
+                                    <option value="10">1 1/4 de pulgada</option>   
+                                    <option value="11">1 3/8 de pulgada</option>   
+                                    <option value="12">1 1/2 de pulgada</option>   
+                                    <option value="13">1 5/8 de pulgada</option>   
+                                    <option value="14">1 3/4 de pulgada</option>   
+                                    <option value="15">2 de pulgada</option>   
+                                </select>  
+                            </div>
+                            <div class="dato" >
+                                <label for="">Peso del equipo:</label>
+                                <input disabled class = "input-data" type="number" name="" id="pesoequipo">
+                            </div>
+                            <div class="dato">
+                                <label for="">Peso del equipo lleno:</label>
+                                <input disabled class = "input-data" type="number" name="" id="pesoequipolleno">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </section>
+            <div class="button-container">
+                <button class="btn" onclick="calcularepFcn()">Calcular</button>
+            </div>      
+        </main>
+    </div>
+    <div class="contenedor sombra">
+            <h2>Calculadora de Índice de Masa Corporal (IMC)</h2>
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" placeholder="Ingrese su peso" required><br><br>
+            <label for="estatura">Estatura (m):</label>
+            <input type="number" step="0.01" id="estatura" placeholder="Ingrese su estatura" required><br><br>
+            <div class="button-container">
+                <button class="btn" onclick="calcularIMC()">Calcular IMC</button>
+            </div>
+        
+            <div id="resultado" class="result"></div>
+    </div>
+    <div class="contenedor sombra">
+            <h2>Conversor de Temperatura</h2>
+            
+            <label for="input-temp">Temperatura:</label>
+            <input type="number" id="input-temp" placeholder="Ingrese la temperatura" required><br><br>
+        
+            <label for="input-scale">Convertir desde:</label>
+            <select id="input-scale">
+                <option value="C">Celsius (°C)</option>
+                <option value="F">Fahrenheit (°F)</option>
+                <option value="K">Kelvin (K)</option>
+                <option value="R">Rankine (R)</option>
+            </select><br><br>
+        
+            <label for="output-scale">Convertir a:</label>
+            <select id="output-scale">
+                <option value="C">Celsius (°C)</option>
+                <option value="F">Fahrenheit (°F)</option>
+                <option value="K">Kelvin (K)</option>
+                <option value="R">Rankine (R)</option>
+            </select><br><br>
+        
+            <div class="button-container">
+                <button class="btn" onclick="convertirTemperatura()">Convertir</button>
+            </div>
+        
+            <div id="resultadoo" class="result"></div>
+    
+    <script src="../js/imc.js"></script>
+    <script src="../js/temp.js"></script>
+    <script src="../js/recipientes.js"></script>
+    </div>
+    <footer class="footer">
+        <p>Todos los derechos reservados. Juan Luis Rodríguez - Ingeniero en Computación</p>
+    </footer>
+</body>
+</html>
